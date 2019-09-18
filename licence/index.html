@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<!-- <style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style> -->
+	<link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="container">
+			<div class="left">
+				<div>
+					<input id="inp1" type="radio" name="lisence" value="l1">
+					<label for="inp1">lisensplan #1</label>
+					<span>$13 per lisense</span>
+				</div>
+				
+				<div>
+					<input id="inp2" type="radio" name="lisence" value="l2">
+					<label for="inp2">lisensplan #2</label>
+					<span>$22 per lisense</span>
+				</div>
+				
+				<div>
+					<input id="inp3" type="radio" name="lisence" value="l3">
+					<label for="inp3">lisensplan #3</label>
+					<span>$34 per lisense</span>
+				</div>
+				
+			</div>
+		</div>
+		<hr>
+		<div class="center">
+			<p>Number of lisence:</p>
+			<select name="number" id="selecting" required>
+				<option value="0">0</option>
+				<option value="10">10</option>
+				<option value="20">20</option>
+				<option value="30">30</option>
+			</select>
+		</div>
+		<hr>
+		<div class="bottom">
+			<h1>total: <span id="h1"></span></h1>
+			<button>bay now</button><br><br>
+			<p>Selected plan:<span id="p1"></span></p>
+		</div>
+	</div>
+
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
