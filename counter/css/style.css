@@ -1,0 +1,44 @@
+body {
+    background-color: #eee;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Anonymous Pro', monospace;
+    color: #aaa;
+}
+
+
+form {
+    background-color: #fff;
+    width: 300px;
+    margin: 10% auto;
+    padding: 40px;
+    box-shadow: 1px 15px 25px #ddd;
+    text-align: center;
+    border-radius: 20px;
+}
+
+input {
+    margin-bottom: 20px;
+    background-color: #eee;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: #aaa;
+    outline: none;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+#button {
+    background: linear-gradient(45deg, #f60, #a0f);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #a0f;
+    outline: none;
+}
