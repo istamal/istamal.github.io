@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'barlowmedium';
+    src: url('../fonts/barlow_medium_macroman/Barlow-Medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'barlowlight';
+    src: url('../fonts/barlow_light_macroman/Barlow-Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: barlowlight;
+    background-color: #ccf;
+}
+
+img {
+    height: auto;
+    width: auto;
+}
+
+h1 {
+    font-size: 20px;
+    color: #666;
+}
+
+.form-header,
+.share-buttons,
+.or,
+.selection-header,
+.inputs {
+    margin-bottom: 30px;
+}
+
+.form-header p {
+    color: #aaa;
+}
+
+
+.content,
+form,
+.form,
+.share-buttons,
+.share-buttons a,
+.or,
+.inputs {
+    display: flex;
+}
+
+.content {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img {
+    width: 550px;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+}
+
+form {
+    flex-direction: column;
+    min-height: 400px;
+}
+
+.form {
+    background-color: #fff;
+    padding: 50px;
+    flex-direction: column;
+}
+
+.share-buttons {
+    justify-content: space-between;
+}
+
+.share-buttons a {
+    width: 170px;
+    height: 20px;
+    font-size: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #45a;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.share-buttons a:last-child {
+    background-color: #4ab;
+}
+
+.share-buttons a img {
+    width: 15px;
+    height: 15px;
+    justify-content: center;
+    margin: 10px;
+}
+
+.or {
+    justify-content: center;
+    align-items: center;
+}
+
+.word {
+    margin: 0 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    background-color: #ccc;
+}
+
+.selection-header h2 {
+    font-size: 15px;
+    color: #666;
+}
+
+.selection-header p {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.inputs {
+    justify-content: space-between;
+}
+
+.email,
+.phone {
+    height: 35px;
+    width: 165px;
+    border: 1px solid #eee;
+    outline: none;
+    padding-left: 5px;
+}
+
+.phone:focus,
+.email:focus {
+    border-left: 3px solid #46f;
+}
+
+.email::placeholder,
+.phone::placeholder {
+    transform: translateY(-12px);
+    font-size: 10px;
+    color: #aaa;
+}
+
+label {
+    line-height: inherit;
+    font-size: 12px;
+    color: #aaa;
+}
+
+input[type="radio"]:checked+label::before {
+    box-shadow: inset 0 0 0 3px #6af;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label[for="individual"]:hover .notify {
+    display: block;
+}
+
+.radio-buttons label::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-bottom: -2px;
+}
+
+.radio-buttons label {
+    color: #555;
+    margin-right: 35px;
+}
+
+label[for="individual"] {
+    position: relative;
+}
+
+.notify {
+    width: 180px;
+    color: #aaa;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #ccc;
+    position: absolute;
+    top: 30px;
+    display: none;
+}
+
+label[for="checkbox"] {
+    font-size: 12px;
+}
+
+.agreement {
+    margin-top: auto;
+}
+
+.agreement button {
+    background-color: #46f;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 10px 40px;
+    font-size: 12px;
+    font-family: barlowmedium;
+    margin-top: 40px;
+}

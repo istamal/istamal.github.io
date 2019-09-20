@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'barlowmedium';
+    src: url('../../fonts/barlow_medium_macroman/Barlow-Medium-webfont.ttf');
+    src: url('../../fonts/barlow_medium_macroman/Barlow-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/barlow_medium_macroman/Barlow-Medium-webfont.woff2') format('woff2'),
+         url('../../fonts/barlow_medium_macroman/Barlow-Medium-webfont.woff') format('woff'),
+         url('../../fonts/barlow_medium_macroman/Barlow-Medium-webfont.ttf') format('truetype'),
+         url('../../fonts/barlow_medium_macroman/Barlow-Medium-webfont.svg#barlowmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
