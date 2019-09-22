@@ -74,6 +74,7 @@ form {
 
 .share-buttons {
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .share-buttons a {
@@ -129,6 +130,7 @@ form {
 
 .inputs {
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .email,
