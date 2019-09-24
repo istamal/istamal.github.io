@@ -10,23 +10,22 @@
 </head>
 
 <body>
-    <div class="content">
-        <div class="img">
+    <main class="wrapper">
+        <div class="img-block">
+            <img class="content-img" alt="iintoo logo" src="img/bg.jpg" alt="">
         </div>
-        <div class="form">
-            <div class="form-header">
-                <h1>Get iintoo it today</h1>
+        <div class="content">
+            <header class="header-block">
+                <h1 class="content-heading">Get iintoo it today</h1>
                 <p>There id no charge or obligation upon registration</p>
-            </div>
+            </header>
 
-            <div class="share-buttons">
-                <a href="#">
-                    <img src="img/facebook.svg" alt="">
-                    <p>Register with facebook</p>
+            <div class="social-buttons">
+                <a class="facebook-button" href="#">
+                    <span>Register with facebook</span>
                 </a>
-                <a href="#">
-                    <img src="img/linkedin.svg" alt="">
-                    <p>Register with linkedin</p>
+                <a class="linkedin-button" href="#">
+                    <span>Register with linkedin</span>
                 </a>
             </div>
             <div class="or">
@@ -34,47 +33,67 @@
                 <span class="word">or</span>
                 <span class="line"></span>
             </div>
-            <form action="">
-                <div class="inputs">
-                    <input class="email" type="email" placeholder="Email">
-                    <input class="phone" type="tel" placeholder="Phone">
+            <form class="sign-up-form" action="">
+                <div class="inputs-block">
+                    <label for="email">Email</label>
+                    <input class="email" type="email">
+                    <label for="phone">Phone</label>
+                    <input class="phone" type="tel">
                 </div>
-                <div class="selection-header">
-                    <h2>What type of investor are you?</h2>
-                    <p>Select the type of investor you are below</p>
+                <div class="radio-buttons-header">
+                    <h2 class="question-header">What type of investor are you?</h2>
+                    <p class="header-description">Select the type of investor you are below</p>
                 </div>
 
                 <div class="radio-buttons">
-                    <input name="check" id="individual" type="radio">
-                    <label for="individual">
-                        Individual
-                        <div class="notify">
+                    <input class="radio-button" name="check" id="individual" type="radio">
+                    <label class="radio-button-label" for="individual">
+                        Individual<span>i</span>
+                        <div class="notify individual">
                             I am natural person investing on my own behalf as a sole owner, join tenant, or tenant in
                             common.
                         </div>
                     </label>
 
-                    <input name="check" id="Business" type="radio">
-                    <label for="Business">Business</label>
+                    <input class="radio-button" name="check" id="Business" type="radio">
+                    <label class="radio-button-label" for="Business">
+                        Business<span>i</span>
+                        <div class="notify business">
+                            I am natural person investing on my own behalf as a sole owner, join tenant, or tenant in
+                            common.
+                        </div>
+                    </label>
 
-                    <input name="check" id="IRA" type="radio">
-                    <label for="IRA">IRA</label>
+                    <input class="radio-button" name="check" id="IRA" type="radio">
+                    <label class="radio-button-label" for="IRA">
+                        IRA <span>i</span>
+                        <div class="notify ira">
+                            I am natural person investing on my own behalf as a sole owner, join tenant, or tenant in
+                            common.
+                        </div>
+                    </label>
 
-                    <input name="check" id="Trust" type="radio">
-                    <label for="Trust">Trust</label>
+                    <input class="radio-button" name="check" id="Trust" type="radio">
+                    <label class="radio-button-label" for="Trust">
+                        Trust<span>i</span>
+                        <div class="notify trust">
+                            I am natural person investing on my own behalf as a sole owner, join tenant, or tenant in
+                            common.
+                        </div>
+                    </label>
 
                 </div>
 
                 <div class="agreement">
                     <input id="checkbox" type="checkbox">
-                    <label for="checkbox">I agree to the terms and resivin notifications from iintoo <a href="#">View
+                    <label class="agreement-label" for="checkbox">I agree to the terms and resivin notifications from iintoo <a href="#">View
                             full terms</a></label><br>
-                    <button>Create Account</button>
+                    <input class="form-submit-button" type="submit" value="create account">
                 </div>
 
             </form>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>

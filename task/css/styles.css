@@ -14,12 +14,19 @@
 
 body {
     font-family: barlowlight;
-    background-color: #ccf;
+    background-color: #cdf;
 }
 
 img {
     height: auto;
     width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+label,
+.form-submit-button {
+    cursor: pointer;
 }
 
 h1 {
@@ -27,73 +34,87 @@ h1 {
     color: #666;
 }
 
-.form-header,
-.share-buttons,
+.header-block,
+.social-buttons,
 .or,
-.selection-header,
-.inputs {
+.radio-buttons-header,
+.inputs-block {
     margin-bottom: 30px;
 }
 
-.form-header p {
+.content-header p {
     color: #aaa;
 }
 
 
+.wrapper,
+.sign-up-form,
 .content,
-form,
-.form,
-.share-buttons,
-.share-buttons a,
+.social-buttons,
 .or,
-.inputs {
+.inputs-block {
     display: flex;
 }
 
-.content {
+.social-buttons,
+.inputs-block {
+    flex-wrap: wrap;
+}
+
+.wrapper {
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.img {
-    width: 550px;
-    background-image: url(../img/bg.jpg);
-    background-size: cover;
+.img-block {
+    line-height: 1px;
 }
 
-form {
+.content-img {
+    width: 575px;
+}
+
+.sign-up-form {
     flex-direction: column;
     min-height: 400px;
 }
 
-.form {
+.img-block,
+.content {
+    box-shadow: 5px 5px 50px #abc;
+}
+
+.content {
     background-color: #fff;
-    padding: 50px;
+    padding: 70px 60px;
     flex-direction: column;
 }
 
-.share-buttons {
+.social-buttons {
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-.share-buttons a {
-    width: 170px;
-    height: 20px;
+.facebook-button,
+.linkedin-button {
+    width: 154px;
     font-size: 10px;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #45a;
+    background-color: #36a;
     text-decoration: none;
+    background-image: url(../img/facebook.svg);
+    background-repeat: no-repeat;
+    background-position: 8px 8px;
+    background-size: 15px;
     color: #fff;
-    padding: 5px 0;
+    padding: 10px 0;
+    padding-left: 35px;
 }
 
-.share-buttons a:last-child {
-    background-color: #4ab;
+.linkedin-button {
+    background-color: #1888ff;
+    background-image: url(../img/linkedin.svg);
 }
 
-.share-buttons a img {
+.social-buttons a img {
     width: 15px;
     height: 15px;
     justify-content: center;
@@ -109,70 +130,86 @@ form {
     margin: 0 5px;
     text-transform: uppercase;
     font-size: 10px;
-
+    color: #666;
 }
 
 .line {
     width: 100px;
-    height: 2px;
+    height: 1px;
     background-color: #ccc;
 }
 
-.selection-header h2 {
-    font-size: 15px;
-    color: #666;
-}
-
-.selection-header p {
-    font-size: 12px;
-    color: #aaa;
-}
-
-.inputs {
-    justify-content: space-between;
-    flex-wrap: wrap;
+.inputs-block {
+    position: relative;
 }
 
 .email,
 .phone {
-    height: 35px;
-    width: 165px;
+    width: 182px;
     border: 1px solid #eee;
     outline: none;
     padding-left: 5px;
+    padding-top: 17px;
+    padding-bottom: 3px;
+    margin-left: -60px;
+    background: none;
+}
+
+label[for="email"],
+label[for="phone"] {
+    margin-bottom: -30px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+label[for="phone"] {
+    left: 227px;
 }
 
 .phone:focus,
 .email:focus {
-    border-left: 3px solid #46f;
+    border-left: 1px solid #4af;
 }
 
-.email::placeholder,
-.phone::placeholder {
-    transform: translateY(-12px);
+.question-header {
+    font-size: 15px;
+    color: #666;
+}
+
+.header-description {
     font-size: 10px;
     color: #aaa;
 }
 
-label {
+.inputs-block {
+    justify-content: space-between;
+}
+
+.radio-button-label {
     line-height: inherit;
     font-size: 12px;
     color: #aaa;
 }
 
-input[type="radio"]:checked+label::before {
-    box-shadow: inset 0 0 0 3px #6af;
+.radio-buttons {
+    margin-bottom: auto;
 }
 
-input[type="radio"] {
-    display: none;
+.radio-button:checked+.radio-button-label::before {
+    box-shadow: inset 0 0 0 2px #4af;
+    border: 1px solid #4af;
 }
 
-label[for="individual"]:hover .notify {
+.radio-button {
+    opacity: 0;
+    position: absolute;
+}
+
+.radio-button-label:hover .notify {
     display: block;
 }
 
-.radio-buttons label::before {
+.radio-button-label::before {
     content: "";
     display: inline-block;
     width: 10px;
@@ -183,13 +220,27 @@ label[for="individual"]:hover .notify {
     margin-bottom: -2px;
 }
 
-.radio-buttons label {
+.radio-button-label {
     color: #555;
-    margin-right: 35px;
+    margin-right: 25px;
 }
 
-label[for="individual"] {
+.radio-button-label {
     position: relative;
+}
+
+.radio-button-label span {
+    margin-left: 10px;
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    text-align: center;
+    font-size: 7px;
+    font-family: serif;
+    line-height: 8px;
 }
 
 .notify {
@@ -199,27 +250,103 @@ label[for="individual"] {
     line-height: 15px;
     padding: 7px 10px;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px #ccc;
+    box-shadow: 2px 2px 10px #ddd;
     position: absolute;
-    top: 30px;
+    left: 0;
+    background-color: #fff;
+    top: 40px;
     display: none;
 }
 
-label[for="checkbox"] {
+.notify .trust {
+    left: -50px;
+}
+
+.agreement-label {
     font-size: 12px;
+    position: relative;
+    color: #aaa;
 }
 
-.agreement {
-    margin-top: auto;
+#checkbox:checked+.agreement-label::after {
+    display: inline;
 }
 
-.agreement button {
-    background-color: #46f;
+#checkbox {
+    opacity: 0;
+    position: absolute; 
+}
+
+.agreement-label::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.agreement-label::after {
+    content: "\2714";
+    display: none;
+    position: absolute;
+    left: 0;
+    top: -7px;
+    color: #666;
+    font-size: 14px;
+}
+
+.form-submit-button {
+    background-color: #4af;
     border: none;
     border-radius: 3px;
     color: white;
-    padding: 10px 40px;
+    padding: 8px 50px;
     font-size: 12px;
     font-family: barlowmedium;
     margin-top: 40px;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+    .img-block {
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 515px) {
+    .facebook-button,
+    .linkedin-button  {
+        width: 100%;
+        padding: 15px;
+        padding-left: 40px;
+        margin-bottom: 20px;
+    } 
+
+    .email,
+    .phone {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width : 320px) {
+    .line {
+        width: 40px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
 }
