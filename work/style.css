@@ -764,6 +764,14 @@
     padding: 1rem; }
   .text-block {
     margin: 0; }
+  .side-bar__modal--call .side-bar__modal--call--form,
+  .side-bar__modal--feedback--form {
+    width: 320px;
+    padding-top: 80px; }
+  .side-bar__modal--call .modal-close-button,
+  .side-bar__modal--feedback--form .modal-close-button {
+    top: 1.5rem;
+    left: 1rem; }
   .wrapper .popup {
     height: auto; }
   .popup .popup-contacts {
