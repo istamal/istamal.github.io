@@ -229,8 +229,9 @@
   vertical-align: middle;
   line-height: 5px;
   border: none;
-  cursor: pointer;
-  border-radius: 50%; }
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer; }
 
 .brands {
   width: 100%;
@@ -410,7 +411,9 @@
   border-radius: 16px;
   font-size: 12px;
   font-family: TTLakes-Medium, sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none; }
   .submit-button img {
     margin-left: 15px; }
 
@@ -684,6 +687,12 @@
   .description {
     padding-left: 1rem;
     flex-wrap: wrap; }
+  .navigation-wrapper {
+    margin-bottom: 1rem; }
+  .navigation {
+    padding-left: 1rem; }
+  .text-block {
+    margin-bottom: 1rem; }
   .price {
     padding-bottom: 40px; }
   .price__menu-wrapper {
@@ -729,7 +738,6 @@
     padding: 1rem;
     border-left: none; }
   .slider-wrapper.swiper-wrapper {
-    padding: 8px;
     margin-top: 1rem; }
   .content .footer div.footer__block {
     margin-bottom: 1rem;
@@ -781,15 +789,16 @@
   top: 0;
   background-color: rgba(255, 255, 255, 0.8);
   height: 1024px;
-  transform: scale(0);
-  transform-origin: 25px 25px;
-  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s;
   z-index: 2; }
   .popup .popup__wrapper {
     padding-top: 1.5rem;
     width: 320px;
     height: 100%;
     display: flex;
+    margin-right: auto;
     flex-direction: column;
     padding-bottom: 2rem;
     box-sizing: border-box;
@@ -923,6 +932,11 @@ body {
   -o-transition: transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s; }
+
+.popup-show {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1); }
 
 .swiper-wrapper {
   padding: 2rem;
