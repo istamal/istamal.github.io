@@ -684,6 +684,11 @@
 @media only screen and (max-width: 480px) {
   .wrapper .content {
     border-left: none; }
+  .content-header {
+    padding-right: 1rem; }
+  .brands .read-more,
+  .technics .read-more {
+    display: none; }
   .description {
     padding-left: 1rem;
     flex-wrap: wrap; }
@@ -835,7 +840,8 @@
 
 .slider-items {
   background-color: #fff;
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 1rem; }
 
 .slider-items-block {
   margin-bottom: 1rem; }
