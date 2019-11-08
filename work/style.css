@@ -25,7 +25,9 @@
 .request,
 .status {
   display: flex;
-  align-items: center;
+  align-items: center; }
+
+.request-link {
   text-decoration: none;
   color: #1B1C21; }
 
@@ -860,6 +862,9 @@ html:not(p) {
   padding: 0;
   margin: 0; }
 
+iframe {
+  border: none; }
+
 *:not(p) {
   padding: 0;
   margin: 0; }
@@ -901,7 +906,8 @@ body {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin: 0 auto; }
 
 .overflow {
   height: auto; }

@@ -16,14 +16,14 @@
     <aside class="side-bar side-bar__left--border">
       <header class="side-bar__header">
         <div class="side-bar__burger-button-wrapper">
-          <button class="button side-bar__burger-menu">
+          <button type="button" class="button side-bar__burger-menu">
               <img src="img/burger.svg" alt="">                   
           </button>
         </div>
         <a href="#" class="side-bar__logo">
           <img src="img/logo.svg" alt="логотип компании CPS">
         </a>
-        <form action="" class="search-form">
+        <form class="search-form">
           <input id="search" type="search" class="search-form__input show">
           <button class="button search-button search-form__button--open">
             <img src="img/icon.svg" alt="" class="button__icon">
@@ -42,26 +42,26 @@
       </nav>
       <div class="contacts">
         <div class="contacts__icons">
-          <button class="button popup-contacts popup__contacts--phone contacts__phone">
+          <button type="button" class="button popup-contacts popup__contacts--phone contacts__phone">
             <img src="img/phone-icon.svg" alt="">                                    
           </button>
-          <button class="button popup-contacts contacts__message">
+          <button type="button" class="button popup-contacts contacts__message">
             <img src="img/message-icon.svg" alt="">                                    
           </button>
-          <button class="button popup-contacts">
+          <button type="button" class="button popup-contacts">
             <img src="img/contact-icon.svg" alt="">                                    
           </button>
         </div>
         <div class="hidden-icons">
-          <button class="button hidden-icon">
+          <button type="button" class="button hidden-icon">
             <img src="img/request.svg" alt="">                                    
           </button>
-          <button class="button hidden-icon">
+          <button type="button" class="button hidden-icon">
             <img src="img/status.svg" alt="">                                    
           </button>
         </div>
         <div class="email-block email-block_style">
-          <a class="email-block__linck menu__link-style" href="mail-to:mail@cps.com?subject=Ремонт техники">mail@cps.com</a>
+          <a class="email-block__linck menu__link-style" href="mailto:mail@cps.com?subject=Ремонт техники">mail@cps.com</a>
         </div>
         <div class="phone-block phone-block_style">
           <a href="tel:+78008908900" class="phone-block__linck menu__link-style">8 800 890 8900</a>
@@ -77,14 +77,14 @@
       <div class="popup__wrapper">
         <header class="popup-header side-bar__header">
           <div class="popup__burger-button-wrapper side-bar__burger-button-wrapper">
-            <button class="close-button button">
+            <button type="button" class="close-button button">
                 <img src="img/close-icon.svg" alt="">                                    
             </button>
           </div>
           <a href="#" class="popup-logo side-bar__logo">
             <img src="img/logo.svg" alt="логотип компании CPS">
           </a>
-          <form action="" class="popup__search-form">
+          <form class="popup__search-form">
             <input id="popup-search" type="search" class="popup__input show search-form__input">
             <button class="button search-button popup__search-form-button--open">
               <img src="img/icon.svg" alt="" class="button__icon">
@@ -103,21 +103,21 @@
         </nav>
         <div class="popup-contacts contacts">
           <div class="popup__contact-icons side-bar__contact-icons">
-            <button class="button popup-contacts contacts__phone">
+            <button type="button" class="button popup-contacts contacts__phone">
               <img src="img/phone-icon.svg" alt="">                                    
             </button>
-            <button class="button popup-contacts contacts__message">
+            <button type="button" class="button popup-contacts contacts__message">
               <img src="img/message-icon.svg" alt="">                                    
             </button>
-            <button class="button popup-contacts">
+            <button type="button" class="button popup-contacts">
               <img src="img/contact-icon.svg" alt="">                                    
             </button>
           </div>
           <div class="popup__hidden-icons hidden-icons">
-            <button class="button hidden-icon">
+            <button type="button" class="button hidden-icon">
               <img src="img/request.svg" alt="">                                    
             </button>
-            <button class="button hidden-icon">
+            <button type="button" class="button hidden-icon">
               <img src="img/status.svg" alt="">                                    
             </button>
           </div>
@@ -139,18 +139,20 @@
       <header class="content-header">
         <section class="content-header__item">
           <h1 class="heading heading__padding--left heading__left--border">Услуги и сервисы</h1>
-          <a href="#" class="request">Оставить заявку
+          <div class="request">
+            <a href="#" class="request-link">Оставить заявку</a>
             <button class="button header-button-icon">
               <img src="img/request.svg" alt="">                                    
             </button>
-          </a>
-          <a href="" class="status">Статус ремонта
+          </div>
+          <div class="status">
+            <a href="" class="request-link">Статус ремонта</a>
             <button class="button header-button-icon">
               <img src="img/status.svg" alt="">                                    
             </button>
-          </a>
+          </div>
         </section>
-        <section class="navigation-wrapper">
+        <div class="navigation-wrapper">
           <nav class="navigation">
             <div class="navigation-item"><a href="" class="navigation-link navigation-link_active">Ремонтируемые бренды</a></div>
             <div class="navigation-item"><a href="" class="navigation-link">Ремонтируемые
@@ -163,8 +165,8 @@
             </div>
             <div class="navigation-item"><a href="" class="navigation-link">Отзывы</a></div>
           </nav>
-        </section>
-        <section class="description">
+        </div>
+        <div class="description">
           <div class="text-block">
             <div class="text-wrapper content_hidden">
                 <p class="text-wrapper__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только
@@ -181,7 +183,7 @@
                   советуют нас родным и близким.
                 </p>
             </div>
-            <button class="text-block__button read-more">
+            <button type="button" class="text-block__button read-more">
               <span class="button__icon">
                 <img src="img/read-more.svg" alt="">
               </span>
@@ -189,11 +191,11 @@
             </button>
           </div>
           <img src="img/MG3223.jpg" alt="Ремонт техники" class="content-header__image">
-        </section>
+        </div>
       </header>
-      <section class="side-bar__modal--call">
-        <form action="" class="side-bar__modal--call--form side-bar__left--border">
-          <button class="close-button button calls-close-button modal-close-button">
+      <div class="side-bar__modal--call">
+        <form class="side-bar__modal--call--form side-bar__left--border">
+          <button type="button" class="close-button button calls-close-button modal-close-button">
             <img src="img/close-icon.svg" alt="">                                    
           </button>
           <h2 class="side-bar__require-call heading__left--border">Заказать звонок</h2>
@@ -207,15 +209,15 @@
               </button>
           </div>
         </form>
-      </section>
-      <section class="side-bar__modal--feedback">
-        <form action="" class="side-bar__modal--feedback--form side-bar__left--border">
-          <button class="close-button button feedback-close-button modal-close-button">
+      </div>
+      <div class="side-bar__modal--feedback">
+        <form class="side-bar__modal--feedback--form side-bar__left--border">
+          <button type="button" class="close-button button feedback-close-button modal-close-button">
             <img src="img/close-icon.svg" alt="">                                    
           </button>
           <h2 class="side-bar__require-feedback heading__left--border">Обратная связь</h2>
           <div class="side-bar__feedback-modal-input-wrapper">
-              <input tabindex="1" type="tex" placeholder="Имя" class="side-bar__modal-phone">
+              <input tabindex="1" type="text" placeholder="Имя" class="side-bar__modal-phone">
               <input tabindex="1" type="tel" placeholder="Телефон" class="side-bar__modal-phone">
               <input tabindex="1" type="email" placeholder="Электронная почта" class="side-bar__modal-phone">
               <textarea name="feedback" id="feedback" placeholder="Сообщение" cols="30" rows="7" class="side-bar__modal-phone"></textarea>
@@ -227,7 +229,7 @@
               </button>
           </div>
         </form>
-      </section>
+      </div>
       <section class="brands">
         <h2 class="brands__heading brands__heading--styles">Ремонт техники различных брендов</h2>
         <div class="brands__container swiper-container">
@@ -291,7 +293,7 @@
           </div>
         <div class="swiper-pagination"></div>
         </div>
-        <button class="brands__more-button read-more">
+        <button type="button" class="brands__more-button read-more">
           <span class="icon">
             <img src="img/read-more.svg" alt="">
           </span>
@@ -353,7 +355,7 @@
         </div>
         <div class="swiper-pagination"></div>
         </div>
-        <button class="technics__button read-more">
+        <button type="button" class="technics__button read-more">
           <span class="technics__button-icon">
             <img src="img/read-more.svg" alt="">
           </span>
@@ -426,120 +428,120 @@
           <section class="slider swiper-container">
               <div class="slider-wrapper swiper-wrapper">
                 <ul class="slider-items swiper-slide">
-                    <div class="slider-items-block">
-                        <li class="slider-item price__menu-cell--style">Ремонтные услуги</li>
-                        <li class="slider-item">Тестирование с выдачей технического заключения</li>
-                    </div>
-                    <div class="slider-items-block">
-                        <li class="slider-item price__menu-cell--style">Цена</li>
-                        <li class="slider-item price__menu-items--style">Бесплатно</li>
-                    </div>
-                    <div class="slider__item-group">
-                        <div class="slider-item-wrapper">
-                            <li class="slider-item price__menu-cell--style">Срок</li>
-                            <li class="slider-item price__menu-items--style">30-120 мин</li>
+                  <li class="slider-items-block">
+                    <div class="slider-item price__menu-cell--style">Ремонтные услуги</div>
+                    <div class="slider-item">Тестирование с выдачей технического заключения</div>
+                  </li>
+                  <li class="slider-items-block">
+                    <div class="slider-item price__menu-cell--style">Цена</div>
+                    <div class="slider-item price__menu-items--style">1 000 ₽</div>
+                  </li>
+                  <li class="slider__item-group">
+                      <div class="slider-item-wrapper">
+                        <div class="slider-item price__menu-cell--style">Срок</div>
+                        <div class="slider-item price__menu-items--style">30-120 мин</div>
+                      </div>
+                      <div class="slider-item-wrapper">
+                        <div class="slider-item">
+                          <button type="submit" class="submit-button">Заказать
+                            <img src="img/submit-button.svg" alt="">
+                          </button>
                         </div>
-                        <div class="slider-item-wrapper">
-                            <li class="slider-item">
-                              <button type="submit" class="submit-button">Заказать
-                                <img src="img/submit-button.svg" alt="">
-                              </button>
-                          </li>
-                        </div> 
-                    </div> 
-                  </ul>
+                      </div> 
+                  </li> 
+                </ul>
                 <ul class="slider-items swiper-slide">
-                    <div class="slider-items-block">
-                        <li class="slider-item price__menu-cell--style">Ремонтные услуги</li>
-                        <li class="slider-item">Диагностика</li>
-                    </div>
-                    <div class="slider-items-block">
-                        <li class="slider-item price__menu-cell--style">Цена</li>
-                        <li class="slider-item price__menu-items--style">Бесплатно</li>
-                    </div>
-                    <div class="slider__item-group">
-                        <div class="slider-item-wrapper">
-                            <li class="slider-item price__menu-cell--style">Срок</li>
-                            <li class="slider-item price__menu-items--style">30 мин</li>
+                  <li class="slider-items-block">
+                    <div class="slider-item price__menu-cell--style">Ремонтные услуги</div>
+                    <div class="slider-item">Замена полифонического динамика</div>
+                  </li>
+                  <li class="slider-items-block">
+                    <div class="slider-item price__menu-cell--style">Цена</div>
+                    <div class="slider-item price__menu-items--style">1 000 ₽</div>
+                  </li>
+                  <li class="slider__item-group">
+                      <div class="slider-item-wrapper">
+                        <div class="slider-item price__menu-cell--style">Срок</div>
+                        <div class="slider-item price__menu-items--style">30-120 мин</div>
+                      </div>
+                      <div class="slider-item-wrapper">
+                        <div class="slider-item">
+                          <button type="submit" class="submit-button">Заказать
+                            <img src="img/submit-button.svg" alt="">
+                          </button>
                         </div>
-                        <div class="slider-item-wrapper">
-                            <li class="slider-item">
-                              <button type="submit" class="submit-button">Заказать
-                                <img src="img/submit-button.svg" alt="">
-                              </button>
-                          </li>
-                        </div> 
-                    </div> 
-                  </ul>
+                      </div> 
+                  </li> 
+                </ul>
                 <ul class="slider-items swiper-slide">
-                    <div class="slider-items-block">
-                        <li class="slider-item price__menu-cell--style">Ремонтные услуги</li>
-                        <li class="slider-item">Замена программного обеспечения</li>
-                    </div>
-                    <div class="slider-items-block">
-                        <li class="slider-item price__menu-cell--style">Цена</li>
-                        <li class="slider-item price__menu-items--style">Бесплатно</li>
-                    </div>
-                    <div class="slider__item-group">
-                        <div class="slider-item-wrapper">
-                            <li class="slider-item price__menu-cell--style">Срок</li>
-                            <li class="slider-item price__menu-items--style">30 мин</li>
+                  <li class="slider-items-block">
+                    <div class="slider-item price__menu-cell--style">Ремонтные услуги</div>
+                    <div class="slider-item">Тестирование с выдачей технического заключения</div>
+                  </li>
+                  <li class="slider-items-block">
+                    <div class="slider-item price__menu-cell--style">Цена</div>
+                    <div class="slider-item price__menu-items--style">1 000 ₽</div>
+                  </li>
+                  <li class="slider__item-group">
+                      <div class="slider-item-wrapper">
+                        <div class="slider-item price__menu-cell--style">Срок</div>
+                        <div class="slider-item price__menu-items--style">30-120 мин</div>
+                      </div>
+                      <div class="slider-item-wrapper">
+                        <div class="slider-item">
+                          <button type="submit" class="submit-button">Заказать
+                            <img src="img/submit-button.svg" alt="">
+                          </button>
                         </div>
-                        <div class="slider-item-wrapper">
-                            <li class="slider-item">
-                              <button type="submit" class="submit-button">Заказать
-                                <img src="img/submit-button.svg" alt="">
-                              </button>
-                          </li>
-                        </div> 
-                    </div> 
-                  </ul>
+                      </div> 
+                  </li> 
+                </ul>
                 <ul class="slider-items swiper-slide">
-                    <div class="slider-items-block">
-                        <li class="slider-item price__menu-cell--style">Ремонтные услуги</li>
-                        <li class="slider-item">Замена дисплея</li>
-                    </div>
-                    <div class="slider-items-block">
-                        <li class="slider-item price__menu-cell--style">Цена</li>
-                        <li class="slider-item price__menu-items--style">Бесплатно</li>
-                    </div>
-                    <div class="slider__item-group">
-                        <div class="slider-item-wrapper">
-                            <li class="slider-item price__menu-cell--style">Срок</li>
-                            <li class="slider-item price__menu-items--style">30 мин</li>
+                  <li class="slider-items-block">
+                    <div class="slider-item price__menu-cell--style">Ремонтные услуги</div>
+                    <div class="slider-item">Диагностика</div>
+                  </li>
+                  <li class="slider-items-block">
+                    <div class="slider-item price__menu-cell--style">Цена</div>
+                    <div class="slider-item price__menu-items--style">Бесплатно</div>
+                  </li>
+                  <li class="slider__item-group">
+                      <div class="slider-item-wrapper">
+                        <div class="slider-item price__menu-cell--style">Срок</div>
+                        <div class="slider-item price__menu-items--style">30 мин</div>
+                      </div>
+                      <div class="slider-item-wrapper">
+                        <div class="slider-item">
+                          <button type="submit" class="submit-button">Заказать
+                            <img src="img/submit-button.svg" alt="">
+                          </button>
                         </div>
-                        <div class="slider-item-wrapper">
-                            <li class="slider-item">
-                              <button type="submit" class="submit-button">Заказать
-                                <img src="img/submit-button.svg" alt="">
-                              </button>
-                          </li>
-                        </div> 
-                    </div> 
-                  </ul>
+                      </div> 
+                  </li> 
+                </ul>
                 <ul class="slider-items swiper-slide">
-                    <div class="slider-items-block">
-                        <li class="slider-item price__menu-cell--style">Ремонтные услуги</li>
-                        <li class="slider-item">Замена полифонического динамика</li>
-                    </div>
-                    <div class="slider-items-block">
-                        <li class="slider-item price__menu-cell--style">Цена</li>
-                        <li class="slider-item price__menu-items--style">Бесплатно</li>
-                    </div>
-                    <div class="slider__item-group">
-                        <div class="slider-item-wrapper">
-                            <li class="slider-item price__menu-cell--style">Срок</li>
-                            <li class="slider-item price__menu-items--style">30 мин</li>
+                  <li class="slider-items-block">
+                    <div class="slider-item price__menu-cell--style">Ремонтные услуги</div>
+                    <div class="slider-item">Замена дисплея</div>
+                  </li>
+                  <li class="slider-items-block">
+                    <div class="slider-item price__menu-cell--style">Цена</div>
+                    <div class="slider-item price__menu-items--style">1 000 ₽</div>
+                  </li>
+                  <li class="slider__item-group">
+                      <div class="slider-item-wrapper">
+                        <div class="slider-item price__menu-cell--style">Срок</div>
+                        <div class="slider-item price__menu-items--style">30-120 мин</div>
+                      </div>
+                      <div class="slider-item-wrapper">
+                        <div class="slider-item">
+                          <button type="submit" class="submit-button">Заказать
+                            <img src="img/submit-button.svg" alt="">
+                          </button>
                         </div>
-                        <div class="slider-item-wrapper">
-                            <li class="slider-item">
-                              <button type="submit" class="submit-button">Заказать
-                                <img src="img/submit-button.svg" alt="">
-                              </button>
-                          </li>
-                        </div> 
-                    </div> 
-                  </ul>
+                      </div> 
+                  </li> 
+                </ul>
               </div>
               <div class="swiper-pagination"></div>
           </section>
@@ -559,7 +561,7 @@
       <section class="adress">
         <h2 class="adress__heading brands__heading--styles">Адреса сервисных центров</h2>
         <div class="adress__map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A16adff818388163a16102922a9c059fb3fdf30c4cec6cda32f24c8eb82bda3b9&amp;source=constructor" frameborder="0">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A16adff818388163a16102922a9c059fb3fdf30c4cec6cda32f24c8eb82bda3b9&amp;source=constructor">
           </iframe>
           <div class="adress__about-servise">
             <p class="about-servise__text">Наши сервисные центры расположены по всей России, в таких городах, как
